@@ -5,8 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Is it really tuesday</title>
+  <style>
+    .content {
+      font-size: 100px;
+      text-align: center;
+    }
+
+    @media (prefers-color-scheme: no-preference) {
+      .theme {
+        background-color: #222222;
+        color: white;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      .theme {
+        background-color: #DDDDDD;
+        color: black;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .theme {
+        background-color: #222222;
+        color: white;
+      }
+    }
+  </style>
 </head>
-<body>
-  <h1>YES</h1>
+<body class="theme">
+  <h1 class="content">YES</h1>
 </body>
 </html>
